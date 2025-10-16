@@ -6,9 +6,9 @@
     <div class="container h-100">
         <div class="row h-100 align-items-center text-center">
             <div class="col-12">
-                <img src="https://ppidutama.kalselprov.go.id/wp-content/uploads/2021/08/LOGO-PPID-UTAMA-PROV-KALSEL-1.png" alt="Logo PPID di Banner" class="mb-4 hero-logo">
+                <img src="https://ppidutama.kalselprov.go.id/wp-content/uploads/2021/08/LOGO-PPID-UTAMA-PROV-KALSEL-1.png" alt="Logo KI di Banner" class="mb-4 hero-logo">
                 <h1 class="hero-title">SELAMAT DATANG</h1>
-                <p class="hero-subtitle">PEJABAT PENGELOLA INFORMASI DAN DOKUMENTASI<br>PROVINSI KALIMANTAN SELATAN</p>
+                <p class="hero-subtitle">PEJABAT PENGELOLA KOMISI INFORMASI<br>PROVINSI KALIMANTAN SELATAN</p>
             </div>
         </div>
     </div>

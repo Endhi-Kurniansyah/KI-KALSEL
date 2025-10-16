@@ -1,8 +1,7 @@
 /* Font & Body */
 body {
     font-family: 'Poppins', sans-serif;
-    padding-top: 70px; /* Jarak untuk navbar fixed-top */
-    background-color: #ffffff; /* Latar belakang body putih bersih */
+    background-color: #ffffff;
 }
 
 /* Hero Banner */
@@ -14,7 +13,7 @@ body {
     display: flex;
     align-items: center;
     color: white;
-    margin-top: -70px; /* Menutupi padding-top body */
+    margin-top: -70px;
 }
 .hero-logo { max-height: 180px; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4)); }
 .hero-title { font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
