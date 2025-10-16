@@ -7,30 +7,25 @@ use Illuminate\Http\Request;
 class HalamanController extends Controller
 {
     /**
-     * Method untuk Halaman Beranda (YANG HILANG)
-     * Fungsi ini akan menampilkan file 'beranda.blade.php'.
+     * Method untuk Halaman Beranda
+     * Fungsi ini akan menampilkan file 'halaman/beranda.blade.php'.
      */
     public function beranda()
     {
         return view('halaman.beranda');
     }
 
-    // === Method untuk Grup Profil ===
+    public function profilKomisioner() { return view('halaman.profil.profil-komisioner'); }
+    public function strukturKomisioner() { return view('halaman.profil.struktur-komisioner'); }
+    public function tentang() { return view('halaman.profil.tentang'); }
     public function visiMisi() { return view('halaman.profil.visi-misi'); }
+    public function strukturSekretariat() { return view('halaman.profil.struktur-sekretariat'); }
     public function tugasFungsi() { return view('halaman.profil.tugas-fungsi'); }
-    public function maklumatPelayanan() { return view('halaman.profil.maklumat-pelayanan'); }
-    public function tentangKami() { return view('halaman.profil.tentang-kami'); }
-    public function lhkpn() { return view('halaman.profil.lhkpn'); }
-    public function koordinasiRutin() { return view('halaman.profil.koordinasi-rutin'); }
-    public function syaratKeberatan() { return view('halaman.profil.syarat-keberatan'); }
+    public function daftarPejabat() { return view('halaman.profil.daftar-pejabat'); }
 
-    // === Method untuk Grup Informasi Publik ===
-    public function sopPpid() { return view('halaman.informasi-publik.sop-ppid'); }
-    public function tataCara() { return view('halaman.informasi-publik.tata-cara'); }
-    public function informasiBerkala() { return view('halaman.informasi-publik.berkala'); }
-    public function informasiSetiapSaat() { return view('halaman.informasi-publik.setiap-saat'); }
-    public function informasiSertaMerta() { return view('halaman.informasi-publik.serta-merta'); }
-    public function informasiDikecualikan() { return view('halaman.informasi-publik.dikecualikan'); }
-    public function daftarOnline() { return view('halaman.informasi-publik.daftar-online'); }
-    public function pengadaan() { return view('halaman.informasi-publik.pengadaan'); }
+    public function agendaKomisioner() { return view('halaman.agenda.publik.agenda-komisioner'); }
+    public function jadwalSidang() { return view('halaman.agenda.publik.jadwal-sidang'); }
+    public function laporan() { return view('halaman.laporan'); }
+    public function regulasi() { return view('halaman.regulasi'); }
+    public function informasiPublik() { return view('halaman.informasi-publik'); }
 }

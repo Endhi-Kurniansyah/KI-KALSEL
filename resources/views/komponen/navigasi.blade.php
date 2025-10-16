@@ -19,26 +19,20 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Profil</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('profil.visi-misi') }}">Visi dan Misi</a></li>
+                        <li><a class="dropdown-item" href="{{ route('profil.profil-komisioner') }}">Pofil Komisioner KI Kalsel</a></li>
+                        <li><a class="dropdown-item" href="{{ route('profil.struktur-komisioner') }}">Struktur Komisioner KI Kalsel</a></li>
+                        <li><a class="dropdown-item" href="{{ route('profil.tentang') }}">Tentang</a></li>
+                        <li><a class="dropdown-item" href="{{ route('profil.visi-misi') }}">Visi Misi</a></li>
+                        <li><a class="dropdown-item" href="{{ route('profil.struktur-sekretariat') }}">Struktur Sekretariat KI Kalsel</a></li>
                         <li><a class="dropdown-item" href="{{ route('profil.tugas-fungsi') }}">Tugas dan Fungsi</a></li>
-                        <li><a class="dropdown-item" href="{{ route('profil.maklumat-pelayanan') }}">Maklumat Pelayanan</a></li>
-                        <li><a class="dropdown-item" href="{{ route('profil.tentang-kami') }}">Tentang Kami</a></li>
-                        <li><a class="dropdown-item" href="{{ route('profil.lhkpn') }}">LHKPN Pimpinan Daerah</a></li>
-                        <li><a class="dropdown-item" href="{{ route('profil.koordinasi-rutin') }}">Koordinasi Rutin</a></li>
-                        <li><a class="dropdown-item" href="{{ route('profil.syarat-keberatan') }}">Syarat Keberatan Layanan</a></li>
+                        <li><a class="dropdown-item" href="{{ route('profil.daftar-pejabat') }}">Daftar Pejabat</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Agenda</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('informasi-publik.sop-ppid') }}">SOP PPID</a></li>
-                        <li><a class="dropdown-item" href="{{ route('informasi-publik.tata-cara') }}">Tata Cara Pelayanan Informasi</a></li>
-                        <li><a class="dropdown-item" href="{{ route('informasi-publik.berkala') }}">Informasi Berkala</a></li>
-                        <li><a class="dropdown-item" href="{{ route('informasi-publik.setiap-saat') }}">Informasi Setiap Saat</a></li>
-                        <li><a class="dropdown-item" href="{{ route('informasi-publik.serta-merta') }}">Informasi Serta Merta</a></li>
-                        <li><a class="dropdown-item" href="{{ route('informasi-publik.dikecualikan') }}">Informasi Dikecualikan</a></li>
-                        <li><a class="dropdown-item" href="{{ route('informasi-publik.daftar-online') }}">Daftar Informasi Publik Online</a></li>
-                        <li><a class="dropdown-item" href="{{ route('informasi-publik.pengadaan') }}">Informasi Pengadaan Barang dan Jasa</a></li>
+                        <li><a class="dropdown-item" href="{{ route('agenda.publik.agenda-komisioner') }}">Agenda Komisioner KIA</a></li>
+                        <li><a class="dropdown-item" href="{{ route('agenda.publik.jadwal-sidang') }}">Jadwal Sidang PSI</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">

@@ -3,30 +3,32 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HalamanController;
 
-// Rute untuk Halaman Beranda
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+// Rute untuk Halaman Beranda (tetap sama)
 Route::get('/', [HalamanController::class, 'beranda'])->name('beranda');
 
-// === GRUP RUTE UNTUK MENU PROFIL ===
 // URL akan memiliki awalan /profil/...
 Route::prefix('profil')->name('profil.')->group(function () {
+    // Rute baru sesuai navbar
+    Route::get('/profil-komisioner', [HalamanController::class, 'profilKomisioner'])->name('profil-komisioner');
+    Route::get('/struktur-komisioner', [HalamanController::class, 'strukturKomisioner'])->name('struktur-komisioner');
+    Route::get('/tentang', [HalamanController::class, 'tentang'])->name('tentang');
     Route::get('/visi-misi', [HalamanController::class, 'visiMisi'])->name('visi-misi');
+    Route::get('/struktur-sekretariat', [HalamanController::class, 'strukturSekretariat'])->name('struktur-sekretariat');
     Route::get('/tugas-fungsi', [HalamanController::class, 'tugasFungsi'])->name('tugas-fungsi');
-    Route::get('/maklumat-pelayanan', [HalamanController::class, 'maklumatPelayanan'])->name('maklumat-pelayanan');
-    Route::get('/tentang-kami', [HalamanController::class, 'tentangKami'])->name('tentang-kami');
-    Route::get('/lhkpn', [HalamanController::class, 'lhkpn'])->name('lhkpn');
-    Route::get('/koordinasi-rutin', [HalamanController::class, 'koordinasiRutin'])->name('koordinasi-rutin');
-    Route::get('/syarat-keberatan', [HalamanController::class, 'syaratKeberatan'])->name('syarat-keberatan');
+    Route::get('/daftar-pejabat', [HalamanController::class, 'daftarPejabat'])->name('daftar-pejabat');
 });
-
-// === GRUP RUTE UNTUK MENU INFORMASI PUBLIK ===
-// URL akan memiliki awalan /informasi-publik/...
-Route::prefix('informasi-publik')->name('informasi-publik.')->group(function () {
-    Route::get('/sop-ppid', [HalamanController::class, 'sopPpid'])->name('sop-ppid');
-    Route::get('/tata-cara-pelayanan', [HalamanController::class, 'tataCara'])->name('tata-cara');
-    Route::get('/informasi-berkala', [HalamanController::class, 'informasiBerkala'])->name('berkala');
-    Route::get('/informasi-setiap-saat', [HalamanController::class, 'informasiSetiapSaat'])->name('setiap-saat');
-    Route::get('/informasi-serta-merta', [HalamanController::class, 'informasiSertaMerta'])->name('serta-merta');
-    Route::get('/informasi-dikecualikan', [HalamanController::class, 'informasiDikecualikan'])->name('dikecualikan');
-    Route::get('/daftar-informasi-publik-online', [HalamanController::class, 'daftarOnline'])->name('daftar-online');
-    Route::get('/informasi-pengadaan-barang-jasa', [HalamanController::class, 'pengadaan'])->name('pengadaan');
+Route::prefix('agenda/publik')->name('agenda.publik.')->group(function () {
+    Route::get('/agenda-komisioner', [HalamanController::class, 'agendaKomisioner'])->name('agenda-komisioner');
+    Route::get('/jadwal-sidang', [HalamanController::class, 'jadwalSidang'])->name('jadwal-sidang');
 });
