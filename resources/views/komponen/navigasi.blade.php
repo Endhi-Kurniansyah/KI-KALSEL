@@ -6,8 +6,8 @@
                 <span style="display: block; font-weight: bold; line-height: 1.2;">
                     KOMISI INFORMASI
                 </span>
-                <span style="display: block; font-size: 0.8em; line-height: 1;">
-                    KALSEL
+                <span style="display: block; font-size: 0.6em; line-height: 1;">
+                    PROVINSI KALSEL
                 </span>
             </div>
         </a>
@@ -19,13 +19,11 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Profil</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('profil.profil-komisioner') }}">Pofil Komisioner KI Kalsel</a></li>
+                        <li><a class="dropdown-item" href="{{ route('profil.profil-komisioner') }}">Profil Komisioner KI Kalsel</a></li>
                         <li><a class="dropdown-item" href="{{ route('profil.struktur-komisioner') }}">Struktur Komisioner KI Kalsel</a></li>
                         <li><a class="dropdown-item" href="{{ route('profil.tentang') }}">Tentang</a></li>
                         <li><a class="dropdown-item" href="{{ route('profil.visi-misi') }}">Visi Misi</a></li>
                         <li><a class="dropdown-item" href="{{ route('profil.struktur-sekretariat') }}">Struktur Sekretariat KI Kalsel</a></li>
-                        <li><a class="dropdown-item" href="{{ route('profil.tugas-fungsi') }}">Tugas dan Fungsi</a></li>
-                        <li><a class="dropdown-item" href="{{ route('profil.daftar-pejabat') }}">Daftar Pejabat</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -59,7 +57,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Putusan</a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Informasi Publik</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="{{ route('putusan.putusan') }}">Putusan</a></li>
                         <li><a class="dropdown-item" href="{{ route('putusan.informasi-berkala') }}">Informasi Berkala</a></li>
@@ -68,6 +66,9 @@
                         <li><a class="dropdown-item" href="{{ route('putusan.dipa') }}">DIPA</a></li>
                         <li><a class="dropdown-item" href="{{ route('putusan.form-permohonan-psi') }}">Form Permohonan PSI</a></li>
                     </ul>
+                </li>
+                <li class="">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="">PPID</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
