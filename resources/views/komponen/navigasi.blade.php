@@ -67,9 +67,6 @@
                         <li><a class="dropdown-item" href="{{ route('putusan.form-permohonan-psi') }}">Form Permohonan PSI</a></li>
                     </ul>
                 </li>
-                <li class="">
-                    <a class="nav-link" href="#" role="button" data-bs-toggle="">PPID</a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
                 </li>

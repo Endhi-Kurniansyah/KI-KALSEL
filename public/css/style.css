@@ -8,18 +8,86 @@ body {
 
 /* Hero Banner */
 .hero-banner {
-    height: 90vh;
-    background-image: linear-gradient(to bottom, rgba(13, 71, 161, 0.8), rgba(0, 25, 75, 0.9)), url('https://ppidutama.kalselprov.go.id/wp-content/uploads/2021/08/kantor-gubernur-kalsel-scaled.jpg');
-    background-size: cover;
-    background-position: center;
+    /* untuk atur tinggi agar gambar terlihat */
+    min-height: 75vh;
+    
+    /* Mendefiniskan gambar sebagai bground*/
+    background-image: url('/images/peta-indonesia.jpg'); /* Ganti dengan path gambar Anda */
+    
+    /* Atur properti background agar gambar sesuai */
+    background-size: cover; /* Penting: agar gambar menutupi seluruh area */
+    background-position: center; /* Memposisikan gambar di tengah */
+    background-repeat: no-repeat; /* Memastikan gambar tidak berulang */
+
+    /* Properti lain dari kode Anda */
     display: flex;
     align-items: center;
-    color: white;
+    color: rgb(255, 255, 255); /* Warna teks di atas background */
     margin-top: -70px;
+
+    position: relative; /* Penting untuk pseudo-element */
+    z-index: 1; /* Pastikan banner di atas */
 }
-.hero-logo { max-height: 180px; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4)); }
-.hero-title { font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-.hero-subtitle { font-weight: 300; font-size: 1.25rem; }
+
+.hero-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay hitam 40% transparan */
+    z-index: -1; /* Tepat di belakang konten teks */
+}
+
+.hero-title { font-weight: 700; font-size: 2.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+.hero-subtitle { line-height: 1.2; font-size: 1.5rem; }
+/* .hero-subtitle { font-weight: 300; font-size: 1.5rem; } */
+
+/* Container Merah Penuh */
+.quick-links-section {
+    background-color: #2085d8; /* Warna merah Komisi Informasi */
+    padding: 30px 0; /* Jarak atas dan bawah */
+    color: white;
+}
+
+/* Style untuk setiap kolom link */
+.quick-link-item {
+    padding: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3); /* Garis pemisah vertikal */
+}
+
+/* Hapus garis pemisah pada item terakhir */
+.quick-link-item:last-child {
+    border-right: none;
+}
+
+/* Style link (agar ikon dan teks menjadi link) */
+.quick-link-item a.link-content {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 0;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.quick-link-item a.link-content:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Sedikit efek transparan saat di-hover */
+}
+
+/* Style ikon */
+.icon-large {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style tombol kunjungi */
+.btn-kunungi {
+    font-weight: 600;
+    margin-top: 10px;
+}
 
 /* Navbar default (awal) */
 #mainNav {
@@ -31,7 +99,7 @@ body {
 
 /* Saat di-scroll */
 #mainNav.scrolled {
-    background-color: #0d47a1 !important;
+    background-color: #ffffff !important;
     box-shadow: 0 10px 10px rgba(0,0,0,0.1);
 }
 
@@ -39,7 +107,7 @@ body {
 .navbar-brand {
     color: #000;
     font-weight: 600;
-    display: flex;
+    display: flex; ;
     align-items: center;
 }
 

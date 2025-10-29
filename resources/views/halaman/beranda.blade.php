@@ -4,65 +4,55 @@
 
 <header class="hero-banner">
     <div class="container h-100">
-        <div class="row h-100 align-items-center text-center">
-            <div class="col-12">
-                <img src="https://ppidutama.kalselprov.go.id/wp-content/uploads/2021/08/LOGO-PPID-UTAMA-PROV-KALSEL-1.png" alt="Logo KI di Banner" class="mb-4 hero-logo">
-                <h1 class="hero-title">SELAMAT DATANG</h1>
-                <p class="hero-subtitle">KOMISI INFORMASI<br>PROVINSI KALIMANTAN SELATAN</p>
+        <div class="row h-100 align-items-center text-center"> 
+            
+            <div class="col-12 pt-5 pb-5"> 
+
+                <h1 class="hero-title">Selamat Datang</h1>
+                <p class="hero-subtitle">Di Komisi Informasi<br>Provinsi Kalimantan Selatan</p>
+                
+                <p class="mt-4"><small>www.diskominfokalsel.go.id</small></p>
             </div>
+            
         </div>
     </div>
 </header>
 
-<section class="container py-5 my-3">
-    <div class="text-center mb-5">
-        <h2 class="section-title">Layanan Informasi Publik</h2>
-        <p class="text-muted">Akses informasi publik dengan mudah melalui layanan yang kami sediakan.</p>
-    </div>
-    <div class="row">
-        <div class="col-md-6 col-lg-3 mb-4">
-            <a href="#" class="service-card">
-                <div class="card h-100 shadow-sm border-0">
-                    <div class="card-body text-center p-4">
-                        <div class="icon-circle-new bg-primary-soft mb-4"><i class="fas fa-sitemap fa-2x text-primary"></i></div>
-                        <h5 class="card-title">Tata Cara Informasi</h5>
-                        <p class="card-text text-muted small">Pahami alur untuk mendapatkan informasi yang Anda butuhkan.</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4">
-             <a href="#" class="service-card">
-                <div class="card h-100 shadow-sm border-0">
-                    <div class="card-body text-center p-4">
-                        <div class="icon-circle-new bg-success-soft mb-4"><i class="fas fa-file-alt fa-2x text-success"></i></div>
-                        <h5 class="card-title">Form Permintaan</h5>
-                        <p class="card-text text-muted small">Ajukan permintaan informasi publik secara online melalui form ini.</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4">
-            <a href="#" class="service-card">
-                <div class="card h-100 shadow-sm border-0">
-                    <div class="card-body text-center p-4">
-                        <div class="icon-circle-new bg-warning-soft mb-4"><i class="fas fa-gavel fa-2x text-warning"></i></div>
-                        <h5 class="card-title">Form Keberatan</h5>
-                        <p class="card-text text-muted small">Ajukan keberatan jika permintaan informasi Anda tidak terpenuhi.</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4">
-            <a href="#" class="service-card">
-                <div class="card h-100 shadow-sm border-0">
-                    <div class="card-body text-center p-4">
-                        <div class="icon-circle-new bg-danger-soft mb-4"><i class="fas fa-database fa-2x text-danger"></i></div>
-                        <h5 class="card-title">Data Informasi Publik</h5>
-                        <p class="card-text text-muted small">Lihat daftar informasi publik yang tersedia untuk diakses.</p>
-                    </div>
-                </div>
-            </a>
+<section class="quick-links-section">
+    <div class="container">
+        <div class="row text-center">
+            
+            <div class="col-md-3 quick-link-item">
+                <a href="URL_E_PPID" class="link-content">
+                    <i class="fas fa-building icon-large"></i> <h4>E-PPID</h4>
+                    <p class="btn-kunungi">Kunjungi →</p>
+                </a>
+            </div>
+
+            <div class="col-md-3 quick-link-item">
+                <a href="URL_SIPSI" class="link-content">
+                    <i class="fas fa-gavel icon-large"></i> 
+                    <h4>SIPSI</h4>
+                    <p class="btn-kunungi">Kunjungi →</p>
+                </a>
+            </div>
+
+            <div class="col-md-3 quick-link-item">
+                <a href="URL_JDIH" class="link-content">
+                    <i class="fas fa-book-open icon-large"></i>
+                    <h4>JDIH</h4>
+                    <p class="btn-kunungi">Kunjungi →</p>
+                </a>
+            </div>
+            
+            <div class="col-md-3 quick-link-item">
+                <a href="URL_E_MONEV" class="link-content">
+                    <i class="fas fa-chart-line icon-large"></i> 
+                    <h4>E-MONEV</h4>
+                    <p class="btn-kunungi">Kunjungi →</p>
+                </a>
+            </div>
+
         </div>
     </div>
 </section>
@@ -115,6 +105,7 @@
         </div>
     </div>
 </section>
+
 
 <section class="container py-5 my-3">
     <div class="text-center mb-5">
